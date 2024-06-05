@@ -1,39 +1,16 @@
 # RookieDB
 
-![The official unofficial mascot of the class projects](images/derpydb-small.jpg)
-
 This repo contains a bare-bones database implementation, which supports
-executing simple transactions in series. In the assignments of
-this class, you will be adding support for
+executing simple transactions in series. It contains support for
 B+ tree indices, efficient join algorithms, query optimization, multigranularity
 locking to support concurrent execution of transactions, and database recovery.
-
-Specs for each of the projects will be released throughout the semester at here: [https://cs186.gitbook.io/project/](https://cs186.gitbook.io/project/)
 
 ## Overview
 
 In this document, we explain
 
-- how to fetch the released code
-- how to fetch any updates to the released code
 - how to setup a local development environment
 - how to run tests using IntelliJ
-- how to submit your code to turn in assignments
-- the general architecture of the released code
-
-## Fetching the released code
-
-For each project, we will provide a GitHub Classroom link. Follow the
-link to create a GitHub repository with the starter code for the project you are
-working on. Use `git clone` to get a local copy of the newly
-created repository.
-
-## Fetching any updates to the released code
-
-In a perfect world, we would never have to update the released code because
-it would be perfectly free of bugs. Unfortunately, bugs do surface from time to
-time, and you may have to fetch updates. We will provide further instructions
-via a post on Piazza whenever fetching updates is necessary.
 
 ## Setting up your local development environment
 
@@ -63,23 +40,6 @@ If you are using IntelliJ, and wish to run the tests for a given assignment
 follow the instructions in the following document:
 
 [IntelliJ setup](intellij-test-setup.md)
-
-## Submitting assignments
-
-To submit a project, navigate to the cloned repo, and use
-`git push` to push all of your changes to the remote GitHub repository created
-by GitHub Classroom. Then, go to Gradescope class and click on the
-project to which you want to submit your code. Select GitHub for the submission
-method (if it hasn't been selected already), and select the repository and branch
-with the code you want to upload and submit. If you have not done this before,
-then you will have to link your GitHub account to Gradescope using the "Connect
-to GitHub" button. If you are unable to find the appropriate repository, then you
-might need to go to https://github.com/settings/applications, click Gradescope,
-and grant access to the `berkeley-cs186-student` organization.
-
-Note that you are only allowed to modify certain files for each assignment, and
-changes to other files you are not allowed to modify will be discarded when we
-run tests.
 
 ## The code
 
