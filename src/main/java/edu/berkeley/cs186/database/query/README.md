@@ -6,23 +6,23 @@
 There are two parts in this project. In the first part I implemented some join algorithms: block nested loop join, sort merge, and grace hash join. In the second part, I implemented a piece of a relational query optimizer: Plan space search.
 
 ### Contents
-- Part 1: Join Algorithms
-    1. [Nested Loop Joins]()
-        - [Simple Nested Loop Join \(SNLJ\)]()
-        - [Page Nested Loop Join \(PNLJ\)]()
-        - [Block Nested Loop Join \(BNLJ\)]()
-    2. [Hash Joins]()
-        - [Simple Hash Join \(SHJ\)]()
-        - [Grace Hash Join \(GHJ\)]()
-    3. [External Sort]()
-    4. [Sort Merge Join (SMJ)]()
-- Part 2: Query Optimization
-    - [Overview: Plan Space Search]()
-    - [Visualizing the Naive Query Optimizer]()
-    5. [Single Table Access Selection (Pass 1)]()
-    6. [Join Selection (Pass i > 1)]()
-    7. [Optimal Plan Selection]()
-    - [Visualizing the Query Optimizer]()
+- [Part 1: Join Algorithms](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#part-1-join-algorithms)
+    - [1. Nested Loop Joins](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#1-nested-loop-joins)
+        - [Simple Nested Loop Join \(SNLJ\)](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#simple-nested-loop-join-snlj)
+        - [Page Nested Loop Join \(PNLJ\)](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#page-nested-loop-join-pnlj)
+        - [Block Nested Loop Join \(BNLJ\)](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#block-nested-loop-join-bnlj)
+    - [2. Hash Joins](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#2-hash-joins)
+        - [Simple Hash Join \(SHJ\)](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#simple-hash-join-shj)
+        - [Grace Hash Join \(GHJ\)](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#grace-hash-join-ghj)
+    - [3. External Sort](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#3-external-sort)
+    - [4. Sort Merge Join (SMJ)](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#4-sort-merge-join)
+- [Part 2: Query Optimization](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#part-2-query-optimization)
+    - [Overview: Plan Space Search](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#overview-plan-space-search)
+    - [Visualizing the Naive Query Optimizer](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#visualizing-the-naive-query-optimizer)
+    - [5. Single Table Access Selection (Pass 1)](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#5-single-table-access-selection-pass-1)
+    - [6. Join Selection (Pass i > 1)](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#6-join-selection-pass-i--1)
+    - [7. Optimal Plan Selection](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#7-optimal-plan-selection)
+    - [Visualizing the Query Optimizer](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/query#visualizing-the-query-optimizer)
 
 ## Part 1: Join Algorithms
 ### 1. Nested Loop Joins

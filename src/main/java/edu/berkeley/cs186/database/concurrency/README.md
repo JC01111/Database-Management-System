@@ -12,13 +12,13 @@ This project divides multigranularity locking into three layers.
 There are two parts of this project. In Part 1, I implemented the bottom layer (`LockManager`) and lock types. In Part 2, I implemented the middle and top layer (`LockContext` and `LockUtil`), and integrate the changes into the database.
 
 ### Contents
-- Part 1: Queuing
-    - [1. LockType]()
-    - [2. LockManager]()
-- Part 2: Multigranularity
-    - [3. LockContext]()
-    - [4. LockUtil]()
-    - [5. Two-Phase Locking]()
+- [Part 1: Queuing](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/concurrency#part-1-queuing)
+    - [1. LockType](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/concurrency#1-locktype)
+    - [2. LockManager](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/concurrency#2-lockmanager)
+- [Part 2: Multigranularity](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/concurrency#part-2-multigranularity)
+    - [3. LockContext](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/concurrency#3-lockcontext)
+    - [4. LockUtil](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/concurrency#4-lockutil)
+    - [5. Two-Phase Locking](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/concurrency#5-two-phase-locking)
 
 ## Part 1: Queuing
 <p align="center">

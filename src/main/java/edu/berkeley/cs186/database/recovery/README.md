@@ -6,15 +6,15 @@ This project will be centered around [`ARIESRecoveryManager.java`](https://githu
 There are two distinct modes of operation: 1. __forward processing__ where we perform logging and maintain some metadata such as the dirty page table and transaction table during normal operation of the database, and 2. __restart recovery__ (a.k.a. crash recovery), which consists of the processes taken when the database starts up again. During normal operation, the rest of the database calls various methods of the recovery manager to indicate that certain operations (e.g. a page write or flush) have occurred. During a restart, the `restart` method is called, which should bring the database back to a valid state.
 
 ### Contents
-- [Forward Processing]()
-    - [1. Transaction Status]()
-    - [2. Logging]()
-    - [3. Savepoints]()
-    - [4. Checkpoints]()
-- [Restart Recovery]()
-    - [5. Analysis]()
-    - [6. Redo]()
-    - [7. Undo]()
+- [Forward Processing](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/recovery#forward-processing)
+    - [1. Transaction Status](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/recovery#1-transaction-status)
+    - [2. Logging](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/recovery#2-logging)
+    - [3. Savepoints](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/recovery#3-savepoints)
+    - [4. Checkpoints](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/recovery#4-checkpoints)
+- [Restart Recovery](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/recovery#restart-recovery)
+    - [5. Analysis](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/recovery#5-analysis)
+    - [6. Redo](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/recovery#6-redo)
+    - [7. Undo](https://github.com/JC01111/Database-Management-System/tree/main/src/main/java/edu/berkeley/cs186/database/recovery#7-undo)
 
 ## Forward Processing
 <p align="center">
